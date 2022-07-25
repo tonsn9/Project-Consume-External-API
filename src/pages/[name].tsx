@@ -15,7 +15,7 @@ const Home: NextPage = ({ repo }: any) => {
     description: repo.description || "",
   });
 
-  const token = "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";
+  const token = "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";
 
   async function editRepository(event: FormEvent) {
     event.preventDefault();
