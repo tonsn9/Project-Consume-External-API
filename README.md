@@ -1,3 +1,7 @@
+<div align="center">
+  <img alt="Video" src="video.gif" />
+</div>
+
 <div>
 <h2>Demo</h2>
 https://consuming-external-api.vercel.app/
