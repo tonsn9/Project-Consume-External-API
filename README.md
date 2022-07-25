@@ -1,6 +1,6 @@
 <div>
 <h2>Demo</h2>
-[https://ignite-lab-puce.vercel.app/](https://consuming-external-api.vercel.app/)
+https://consuming-external-api.vercel.app/
 </div>
 
 <h2>
