@@ -14,12 +14,18 @@ const Home: NextPage = ({ repo }: any) => {
     name: repo.name || "",
     description: repo.description || "",
   });
+
+  const token = "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";
+
   async function editRepository(event: FormEvent) {
     event.preventDefault();
     try {
-      await api.put(`/repos/tonsn9/${repo.name}`, {
-        form,
-      });
+      await api.patch(
+        `/repos/tonsn9/${repo.name}`,
+        { form },
+        { headers: { Authorization: `token ${token}` } }
+      );
+
       window.alert("Sucesso");
     } catch (error) {}
   }
@@ -37,7 +43,9 @@ const Home: NextPage = ({ repo }: any) => {
             setForm({ ...form, description: event.target.value })
           }
         ></textarea>
-        <button className="btnSalvar" type="submit">Salvar</button>
+        <button className="btnSalvar" type="submit">
+          Salvar
+        </button>
       </form>
     </Box>
   );

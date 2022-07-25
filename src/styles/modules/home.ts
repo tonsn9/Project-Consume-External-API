@@ -32,7 +32,7 @@ export const Container = styled.main`
       border-collapse: collapse;
       border-spacing: 0;
       width: 100%;
-      border: 1px solid #adbac7;
+      border: 1px solid ${primary};
     }
 
     th,
@@ -130,7 +130,7 @@ export const Box = styled.main`
     color: ${text};
   }
 
-  .btnsalvar: hover {
+  .btnSalvar: hover {
     background: rgba(144 157 171 / 12%);
     border: 1px solid rgba(144 157 171 / 12%);
     transition-duration: 150ms;
